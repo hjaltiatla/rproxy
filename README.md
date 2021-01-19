@@ -21,7 +21,7 @@ chmod 600 /root/.secrets/certbot/cloudflare.ini
 ```certbot certonly \
   --dns-cloudflare \
   --dns-cloudflare-credentials ~/.secrets/certbot/cloudflare.ini \
-  -d example.com```
+  -d example.com```  
 
 #### reload nginx service
   service nginx reload
