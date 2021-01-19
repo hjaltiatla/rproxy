@@ -1,4 +1,7 @@
 ### Custom Nginx Reverse Proxy using Certbot and Cloudflare DNS challenge for my home  
+
+**About Project: I use this reverse proxy after I've created an Proxmox VM using Terraform and deployed Docker using Ansible to the VM at my home**
+
 #### To build dockerfile
 ```
 docker build -f Dockerfile . -t hjaltiatla/rproxy:1
