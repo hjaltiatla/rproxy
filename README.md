@@ -18,10 +18,12 @@ docker container exec -it nginx-rproxy_app_1 /bin/bash
 chmod 600 /root/.secrets/certbot/cloudflare.ini
 
 #### Create certificate
-```certbot certonly \
+```
+certbot certonly \
   --dns-cloudflare \
   --dns-cloudflare-credentials ~/.secrets/certbot/cloudflare.ini \
-  -d example.com```
+  -d example.com
+```
 
 #### reload nginx service
   service nginx reload
